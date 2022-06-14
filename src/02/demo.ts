@@ -3,13 +3,12 @@ let x: number
 let y: string
 let z: boolean
 let a: Date
-let b:string[]
+let b: string[]
 
-//Assign wrong "type"(has to be an array with a string not just a string)
-b = "Hello!"// has to be in an array
+// Assign wrong "type"(has to be an array with a string not just a string)
+//b = "Hello!"//Has to be in an array
 b = ["Hello!"] //Correct 
-//Can't be a number has to be a string
-b = 1234 //Has to be a string not an integer
+//b = 1234 //Has to be a string not an integer
 
 //Allows the value to be any kind of type!
 let u: any
