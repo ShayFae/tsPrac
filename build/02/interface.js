@@ -1,14 +1,22 @@
-// //Interface is a way to give information to typescript(main difference between Class and interface)
-// //When using extends it merges the Address interface into Contact interface
-// interface Contact extends Address{
-//   id: number;
-//   //Instead of using string you can use a type alias in this case ContactName
-//   name: string;
-//   // birthDate: Date;
-//   birthDate?: Date; //When adding a question mark it allows that field to be optional and will not show an error when it is missing
-// }
+//Enum is a type that contains hard-coded values
+var ContactStatus;
+(function (ContactStatus) {
+    //If left as just Active its value would only equal to 0 but giving it a string value it will now read as that string
+    ContactStatus["Active"] = "Active";
+    ContactStatus["Inactive"] = "Inactive";
+    ContactStatus["New"] = "New";
+})(ContactStatus || (ContactStatus = {}));
+//Since Address was merged with Contact you must also add any mandatory values from it as well
 let primaryContact = {
-    birthDate: new Date("1980-01-16"),
-    id: 12345,
-    name: "Jamie Johnson",
+    id: 1,
+    name: "Bob",
+    //When the birtDate field is missing it will still run fine 
+    // birthDate: new Date("2022-06-14")
+    //Targeting enum ContactStatus and giving it the active value
+    status: ContactStatus.Active,
+    line1: "string",
+    line2: "string",
+    province: "string",
+    region: "string",
+    postalCode: "string",
 };
