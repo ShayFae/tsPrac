@@ -1,6 +1,6 @@
 //Interface is a way to give information to typescript
 //When using extends it merges the Address interface into Contact interface
-interface Contact extends Address{
+interface Contact extends Address {
   id: number;
   name: ContactName; //Instead of using string you can use a type alias in this case ContactName
   // birthDate: Date;

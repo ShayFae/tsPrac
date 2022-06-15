@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    // "allowJs": true,
+    // "checkJs": true,
+    "outDir": "build",
+    "target": "es6",
+    // "noEmit": true
+  },
+  // "include": ["src/**/*"]
+  "include": ["**.ts"]
+}
