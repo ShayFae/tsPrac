@@ -21,8 +21,8 @@ function getValue2<T>(source: T, propertyName: keyof T) {
 }
 
 //Status isn't in contact so it shows an error
-const val = getValue(contact, "status")
+// const val = getValue(contact, "status")
 //No issues when using id because it is within Contact
-const val2 = getValue(contact, "id")
+// const val2 = getValue(contact, "id")
 
 const val3 = getValue2({min: 1, max: 100}, "max")
